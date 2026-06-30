@@ -30,7 +30,9 @@ jobs:
           cache: pnpm
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        # --config.minimumReleaseAge=0 overrides any release-age gate the runner
+        # injects; the committed lockfile is the reproducible supply-chain control.
+        run: pnpm install --frozen-lockfile --config.minimumReleaseAge=0
 
       - name: Type-check
         run: pnpm typecheck

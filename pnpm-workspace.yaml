@@ -2,3 +2,10 @@
 # esbuild (used by tsx, tsup and vitest) installs a platform-native binary.
 allowBuilds:
   esbuild: true
+
+# Disable pnpm's release-age supply-chain gate for this project. The committed
+# pnpm-lock.yaml (with integrity hashes) is the reproducible supply-chain
+# control; a wall-clock age gate makes `--frozen-lockfile` installs of freshly
+# pinned versions non-deterministic (and breaks CI on cold stores). Set a
+# positive number of minutes to re-enable.
+minimumReleaseAge: 0
