@@ -15,7 +15,7 @@ A production-grade starting point for building **[Model Context Protocol](https:
 
 ## Requirements
 
-- Node.js `>= 20`
+- Node.js `>= 22.13` (required by pnpm 11)
 - [pnpm](https://pnpm.io) `>= 11` (`corepack enable` will provide it)
 
 ## Quick start

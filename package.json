@@ -13,7 +13,7 @@
     "streamable-http"
   ],
   "engines": {
-    "node": ">=20"
+    "node": ">=22.13"
   },
   "packageManager": "pnpm@11.9.0",
   "main": "./dist/index.js",
