@@ -1,0 +1,4 @@
+# Approve post-install build scripts for trusted dependencies.
+# esbuild (used by tsx, tsup and vitest) installs a platform-native binary.
+allowBuilds:
+  esbuild: true

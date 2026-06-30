@@ -1,0 +1,15 @@
+# Normalize all text files to LF in the repo and on checkout (matches Prettier
+# `endOfLine: lf` and .editorconfig), regardless of the contributor's core.autocrlf.
+* text=auto eol=lf
+
+# Explicitly binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+
+# Lockfile: keep diffs collapsed in reviews
+pnpm-lock.yaml linguist-generated=true -diff
